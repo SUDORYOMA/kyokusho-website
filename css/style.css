@@ -187,6 +187,7 @@ img{max-width:100%}
 .business-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,3vw,48px)}
 .business-card{background:#fff;border:1px solid #e6e0d9}
 .business-photo{aspect-ratio:4/3;background-size:cover;background-position:center;background-repeat:no-repeat}
+.business-photo.photo-placeholder{border:none;background:repeating-linear-gradient(115deg,#e5dfd7 0 16px,#ede7df 16px 32px)}
 .business-card-body{padding:clamp(24px,3vw,40px)}
 .business-en{margin:0 0 6px;font:800 clamp(20px,2.4vw,30px) 'Archivo';letter-spacing:.06em;color:#b3122b}
 .business-card-body h3{margin:0 0 16px;font:900 clamp(19px,2vw,24px) 'Noto Sans JP';color:#191919}
@@ -337,3 +338,83 @@ img{max-width:100%}
 .footer-recruit{color:#ff5b47!important}
 .footer-recruit:hover{color:#ff8a7a!important}
 .footer-copy{margin:28px 0 0;font:500 11px 'Archivo';letter-spacing:.18em;color:#6d665e}
+
+/* ===== Recruit page ===== */
+.rp-hero{position:relative;min-height:76svh;overflow:hidden;display:flex;align-items:flex-end}
+.rp-hero-photo{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:repeating-linear-gradient(135deg,#e5dfd7 0 15px,#ede7df 15px 30px);
+}
+.rp-hero-photo span{font:500 13px/1.7 ui-monospace,Menlo,monospace;color:#a89f95;letter-spacing:.12em;text-align:center;padding:0 24px}
+.rp-hero-sunrise{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(178deg,rgba(179,18,43,.18) 0%,rgba(232,99,42,.1) 26%,rgba(255,255,255,0) 52%);
+  animation:ks-sunrise 11s ease-in-out infinite;
+}
+.rp-hero-fade{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(92deg,rgba(244,241,237,.95) 0%,rgba(244,241,237,.68) 34%,rgba(244,241,237,0) 66%);
+}
+.rp-hero-inner{position:relative;width:100%;max-width:1320px;margin:0 auto;padding:120px clamp(20px,5vw,52px) clamp(56px,9vh,96px)}
+.rp-hero-content{position:relative;padding-left:clamp(18px,2.5vw,32px);max-width:760px}
+.rp-hero-content .pill{position:absolute;left:0;top:8px;margin:0}
+.rp-hero-content .eyebrow{margin:34px 0 clamp(16px,3vh,26px);font-size:clamp(12px,1.2vw,15px);letter-spacing:.34em}
+.rp-hero-content h1{margin:0;font:900 clamp(34px,6vw,76px)/1.16 'Noto Sans JP';color:#191919;text-wrap:balance}
+.rp-hero-lead{margin:clamp(20px,3vh,30px) 0 0;font:500 clamp(15px,1.5vw,20px)/1.9 'Noto Sans JP';color:#3a352f;max-width:32em}
+
+.rp-why{background:#f4f1ed;padding:clamp(72px,11vw,140px) clamp(20px,5vw,52px)}
+.rp-why-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,5vw,72px);align-items:start}
+.rp-why-grid h2{font:900 clamp(24px,3.2vw,42px)/1.5 'Noto Sans JP';color:#191919;text-wrap:balance}
+.rp-why-text{margin:0;font:400 clamp(15px,1.15vw,17px)/2.15 'Noto Sans JP';color:#4a453f;padding-top:clamp(4px,3vw,52px)}
+
+.rp-requirements{background:#ffffff;padding:clamp(72px,11vw,140px) clamp(20px,5vw,52px);border-top:1px solid #e6e0d9}
+.rp-requirements-inner{max-width:960px;margin:0 auto}
+.rp-requirements-inner h2{margin:0 0 clamp(36px,5vw,56px);font:900 clamp(26px,3.4vw,44px) 'Noto Sans JP';color:#191919}
+.rp-salary-row{gap:12px 24px}
+.rp-salary-row dt{align-self:start}
+.rp-salary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:#e2ddd7;border:1px solid #e2ddd7}
+.rp-salary-cell{background:#faf8f5;padding:18px 20px}
+.rp-salary-cell.is-experienced{background:#fff}
+.rp-salary-badge{display:inline-flex;align-items:center;gap:8px;font:700 12px 'Noto Sans JP';letter-spacing:.06em;color:#8f877e;margin-bottom:10px}
+.rp-salary-cell.is-experienced .rp-salary-badge{color:#b3122b}
+.rp-salary-dot{width:18px;height:9px;border-radius:18px 18px 0 0;background:#c9c1b7;display:block}
+.rp-salary-cell.is-experienced .rp-salary-dot{background:#b3122b}
+.rp-salary-main{margin:0;font:700 clamp(18px,1.8vw,22px)/1.4 'Noto Sans JP';color:#191919}
+.rp-salary-sub{margin:4px 0 0;font:500 14px/1.6 'Noto Sans JP';color:#4a453f}
+.rp-salary-note{margin:12px 0 0;font:500 13px/1.7 'Noto Sans JP';color:#8f877e}
+.rp-muted{color:#8f877e}
+
+.rp-flow{background:#f4f1ed;padding:clamp(72px,11vw,140px) clamp(20px,5vw,52px)}
+.rp-flow-inner{max-width:1120px;margin:0 auto}
+.rp-flow-inner .eyebrow{margin-bottom:clamp(36px,6vw,64px)}
+.rp-flow-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:clamp(16px,2vw,24px)}
+.rp-flow-card{background:#fff;border:1px solid #e6e0d9;padding:clamp(24px,3vw,32px)}
+.rp-flow-card.is-dark{background:#191919;border-color:#191919}
+.rp-flow-num{font:800 40px/0.9 'Archivo';color:#e6dfd6}
+.rp-flow-card.is-dark .rp-flow-num{color:#4a4038}
+.rp-flow-card h3{margin:14px 0 8px;font:900 17px 'Noto Sans JP';color:#191919}
+.rp-flow-card.is-dark h3{color:#fff}
+.rp-flow-card p{margin:0;font:400 14px/1.9 'Noto Sans JP';color:#4a453f}
+.rp-flow-card.is-dark p{color:#c9c1b7}
+
+.rp-entry{
+  scroll-margin-top:84px;position:relative;overflow:hidden;
+  background:linear-gradient(120deg,#8f0f22 0%,#b3122b 46%,#e8632a 128%);color:#fff;
+  padding:clamp(64px,9vw,120px) clamp(24px,5vw,52px);
+}
+.rp-entry-glow{
+  position:absolute;left:50%;bottom:-10%;transform:translateX(-50%);
+  width:min(90vw,720px);height:min(45vw,360px);border-radius:9999px 9999px 0 0;
+  background:rgba(255,255,255,.09);pointer-events:none;
+}
+.rp-entry-inner{position:relative;max-width:820px;margin:0 auto;text-align:center}
+.rp-entry-pill{display:inline-block;width:52px;height:26px;border-radius:52px 52px 0 0;background:#fff;margin-bottom:24px}
+.rp-entry-inner h2{margin:0 0 24px;font:900 clamp(28px,4.4vw,58px)/1.25 'Noto Sans JP';color:#fff;text-wrap:balance}
+.rp-entry-text{margin:0 auto clamp(36px,5vw,48px);font:400 clamp(15px,1.1vw,16px)/2 'Noto Sans JP';color:rgba(255,255,255,.9);max-width:40em}
+.rp-entry-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.btn-entry{
+  display:inline-flex;align-items:center;gap:12px;padding:19px 40px;
+  font:700 16px 'Noto Sans JP';letter-spacing:.03em;color:#fff;
+  border:1.5px solid rgba(255,255,255,.7);transition:background .35s,color .35s;
+}
+.btn-entry:hover{background:#fff;color:#b3122b}
