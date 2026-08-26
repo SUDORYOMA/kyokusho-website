@@ -418,3 +418,16 @@ img{max-width:100%}
   border:1.5px solid rgba(255,255,255,.7);transition:background .35s,color .35s;
 }
 .btn-entry:hover{background:#fff;color:#b3122b}
+
+/* ===== Legal (privacy policy) ===== */
+.legal{background:#ffffff;padding-top:calc(74px + clamp(56px,9vw,110px))}
+.legal-inner{max-width:760px;margin:0 auto}
+.legal-inner h1{margin:0 0 clamp(24px,3vw,36px);font:900 clamp(28px,4vw,44px)/1.3 'Noto Sans JP';color:#191919}
+.legal-lead{margin:0 0 clamp(40px,5vw,56px);font:400 15px/2 'Noto Sans JP';color:#4a453f}
+.legal-article h2{margin:clamp(36px,5vw,52px) 0 16px;font:700 18px/1.6 'Noto Sans JP';color:#191919;padding-top:20px;border-top:1px solid #e6e0d9}
+.legal-article h2:first-child{margin-top:0;padding-top:0;border-top:none}
+.legal-article p{margin:0 0 16px;font:400 15px/2 'Noto Sans JP';color:#4a453f}
+.legal-article ul{margin:0 0 16px;padding-left:1.4em;font:400 15px/2 'Noto Sans JP';color:#4a453f}
+.legal-article li{margin:0 0 4px}
+.legal-article a{color:#b3122b}
+.legal-date{margin-top:clamp(36px,5vw,52px);font:500 13px 'Noto Sans JP';color:#8f877e}
