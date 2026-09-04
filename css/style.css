@@ -57,11 +57,11 @@ img{max-width:100%}
   display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
 .brand{display:flex;align-items:center;gap:14px;color:#1c1c1c}
-.brand-logo{height:52px;width:auto;display:block;flex:none}
+.brand-logo{height:46px;width:auto;display:block;flex:none}
 .brand-logo-sm{height:40px}
-.brand-text{line-height:1;display:block;border-left:1px solid #e0d9d1;padding-left:14px}
+.brand-text{line-height:1;display:block}
 .brand-en{display:block;font:800 15px/1 'Archivo';letter-spacing:.16em;color:#1c1c1c}
-.brand-jp{display:block;font:700 11px/1 'Noto Sans JP';letter-spacing:.1em;color:#8f877e;margin-top:4px}
+.brand-jp{display:block;font:700 11px/1 'Noto Sans JP';letter-spacing:.1em;color:#8f877e;margin-top:5px}
 
 .site-nav{display:flex;align-items:center;gap:clamp(18px,2.2vw,34px)}
 .nav-link{
@@ -327,9 +327,9 @@ img{max-width:100%}
   gap:clamp(32px,5vw,64px);padding-bottom:clamp(40px,5vw,60px);
   border-bottom:1px solid rgba(255,255,255,.12);
 }
-.footer-brand{display:flex;align-items:center;gap:13px;margin-bottom:20px}
+.footer-brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .footer-brand .brand-en{color:#fff}
-.footer-mark{width:36px;height:18px;border-radius:36px 36px 0 0;background:#b3122b;display:block;flex:none}
+.footer-logo{height:44px;width:auto;display:block;flex:none}
 .footer-address{margin:0;font:400 13px/1.9 'Noto Sans JP';color:#8f877e;letter-spacing:.06em}
 .footer-nav{display:flex;flex-direction:column;gap:13px}
 .footer-label{font:600 11px 'Archivo';letter-spacing:.24em;color:#6d665e;margin-bottom:4px}
